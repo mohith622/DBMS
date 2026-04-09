@@ -1,0 +1,133 @@
+/* 1. Reset everything to look clean by default */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/* 2. Main Page Background */
+body {
+    /* A beautiful, premium blue-to-purple gradient */
+    background: linear-gradient(135deg, #0f172a, #3b82f6, #8b5cf6);
+    background-attachment: fixed;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 3. The center box holding everything */
+.container {
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+}
+
+/* 4. Text alignment for the title */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+header p {
+    color: #e2e8f0;
+}
+
+/* 5. The generic Card Design (Used for both Form and Matches) */
+.card {
+    /* Dark semi-transparent background to let the gradient show through */
+    background: rgba(15, 23, 42, 0.85); 
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.card h2 {
+    margin-bottom: 20px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+}
+
+/* Used by Javascript to switch screens */
+.hidden {
+    display: none !important;
+}
+
+/* 6. Form Inputs & Labels */
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.input-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.input-group input, .input-group select {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: #1e293b;
+    color: white;
+    font-size: 16px;
+}
+
+/* 7. Buttons */
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    background: #3b82f6; /* Bright blue */
+    color: white;
+}
+button:hover {
+    background: #2563eb; /* Darker blue when hovered */
+}
+
+.btn-secondary {
+    background: #475569; /* Gray start over button */
+    margin-top: 20px;
+}
+
+/* 8. Messages area */
+.message {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* 9. The Cards for the individual Matched Users */
+.match-card {
+    background: #1e293b;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.match-info p {
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+/* The circle with the percentage score inside */
+.match-score {
+    background: rgba(16, 185, 129, 0.2); /* Transparent Green */
+    color: #10b981; /* Solid Green Text */
+    border: 2px solid #10b981;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+}
